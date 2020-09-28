@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="c754a786-3925-4595-87c6-efb245f0d56b" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="mavendemoFlow" doc:id="85e5d910-1c89-4647-86d5-627b8f312613" >
+		<http:listener doc:name="Listener" doc:id="73901a5e-e984-46b8-a7fe-2b0ffac478b6" config-ref="HTTP_Listener_config" path="/maven"/>
+		<set-payload value="Great maven works !!" doc:name="Set Payload" doc:id="b67188d3-45d7-49e3-b952-82058e2eba60" />
+	</flow>
+</mule>

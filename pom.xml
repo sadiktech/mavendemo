@@ -34,7 +34,7 @@
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${app.runtime}</muleVersion>
 						<username>sadik12</username>
-						<password>Tigo@1357</password>
+						<password>XXXXX</password>
 						<applicationName>mavendemo</applicationName>
 						<server>Exchange3</server>
 						<target>kelltonmule</target>
